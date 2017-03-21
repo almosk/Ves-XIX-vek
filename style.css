@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  min-width: 1274px;
+}
+
+.mainSectionPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgrey;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 1274px;
+  height: 900px;
+  background-color: white;
+  transform: scale(.7);
+  box-shadow: 1px 1px 3px 2px #C7C7C7;
+}
+
+.picture1,
+.picture2,
+.picture3 {
+  width: 425px;
+  height: 900px;
+
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture1 {
+
+}
+
+.picture2 {
+  left: 425px;
+  background-image: url(iphone6.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.picture3 {
+  left: 850px;
+}
+
+p {
+  width: 375px;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+img {
+  /*box-shadow: 1px 1px 17px 3px #D6D6D6;*/
+  border-radius: 5px 5px 5px 5px;
+  border: 4px;
+  border-color: black;
+}
+
+#c1 {
+  background-image: url(bg2.png);
+}
+
+#c2 {
+  background-image: url(bg3.png);
+}
+
+/*#c2 > .picture1 {
+  background-image: url(iphone6.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+#c3 {
+  background-image: url(bg4.png);
+}
+
+#c4 {
+  background-image: url(bg5.png);
+}
+
+#c5 {
+  background-image: url(bg6.png);
+}
