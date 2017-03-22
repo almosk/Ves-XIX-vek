@@ -6,6 +6,12 @@
   min-width: 1274px;
 }
 
+.scroll {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: black;
+}
 .mainSectionPage {
   width: 100vw;
   height: 100vh;
@@ -81,6 +87,7 @@ h1 {
   font-weight: regular;
   font-size: 21px;
   margin-top: 10px;
+  line-height: 24px;
 }
 
 h2 {
@@ -88,6 +95,7 @@ h2 {
   font-weight: bold;
   font-size: 34px;
   margin-top: 30px;
+  line-height: 35px;
 }
 
 /*#c1 {
@@ -98,7 +106,7 @@ h2 {
   background-image: url(bg3.png);
 }*/
 
-#c2 > .picture1 {
+#c2 > .picture3 {
   background-image: url(iphone6.png);
   background-size: contain;
   background-position: center;
@@ -119,3 +127,9 @@ h2 {
 #c5 {
   background-image: url(bg6.png);
 }*/
+
+@media screen and (min-width: 1600px) {
+  .content {
+    transform: scale(1.2);
+  }
+}
