@@ -22,7 +22,7 @@
 
 * {
   box-sizing: border-box;
-  transition: .5s ease;
+  /*transition: .5s ease;*/
 }
 
 .body {
@@ -30,10 +30,9 @@
 }
 
 nav {
-  height: 100px;
+  height: 100vh;
   width: 100vw;
   position: fixed;
-  top: calc(50vh - 50px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -41,25 +40,40 @@ nav {
   transform: translateX();
 }
 
-.scrollPlus {
+.scrollPlus,
+.scrollMinus {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
   width: 100px;
-  height: 100px;
-  background-color: yellow;
+  height: 100vh;
+
   cursor: pointer;
-  margin: 0 20px;
+}
+
+.scrollPlus:active,
+.scrollMinus:active {
+  opacity: .2;
+}
+
+
+.scrollPlus {
+  background-image: url(plus.svg);
 }
 
 .scrollMinus {
-  top: 100px;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  cursor: pointer;
-  margin: 0 20px;
+  background-image: url(minus.svg);
+}
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .mainSection {
-  position: absolute;
+  position: fixed;
   height: 100vh;
 
   display: flex;
@@ -154,6 +168,9 @@ h2 {
   display: none;
 }
 
+#c0 {
+  left: 0;
+}
 /*#c1 {
   background-image: url(bg2.png);
 }
@@ -183,6 +200,11 @@ h2 {
 #c5 {
   background-image: url(bg6.png);
 }*/
+
+.hidden {
+  opacity: 0;
+  cursor: default;
+}
 
 @media screen and (min-width: 1600px) {
   .content {
