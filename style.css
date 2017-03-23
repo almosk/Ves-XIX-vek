@@ -22,23 +22,56 @@
 
 * {
   box-sizing: border-box;
+  transition: .5s ease;
 }
 
 .body {
   min-width: 1274px;
 }
 
-.scroll {
+nav {
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  top: calc(50vh - 50px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
+  transform: translateX();
+}
+
+.scrollPlus {
   width: 100px;
   height: 100px;
-  position: absolute;
-  background-color: black;
+  background-color: yellow;
+  cursor: pointer;
+  margin: 0 20px;
 }
+
+.scrollMinus {
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.mainSection {
+  position: absolute;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .mainSectionPage {
   width: 100vw;
   height: 100vh;
   min-height: 700px;
-  background-color: lightgrey;
+  background-color: black;
 
   display: flex;
   justify-content: center;
@@ -75,7 +108,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  transform: scale(.8);
+  transform: scale(.9);
 }
 
 .picture3 {
@@ -118,6 +151,7 @@ h2 {
   font-size: 34px;
   margin-top: 30px;
   line-height: 35px;
+  display: none;
 }
 
 /*#c1 {
@@ -128,7 +162,7 @@ h2 {
   background-image: url(bg3.png);
 }*/
 
-#c2 > .picture3 {
+/*#c2 > .picture1 {
   background-image: url(iphone6.png);
   background-size: contain;
   background-position: center;
@@ -136,7 +170,7 @@ h2 {
   transform: scale(.8);
 
 
-}
+}*/
 
 /*#c3 {
   background-image: url(bg4.png);
@@ -152,6 +186,6 @@ h2 {
 
 @media screen and (min-width: 1600px) {
   .content {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }

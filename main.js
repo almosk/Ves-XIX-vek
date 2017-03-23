@@ -1,5 +1,9 @@
 $(function() {
-  $('.scroll').click(function() {
-    $('section').scrollTo('1000px');
-  })
-})
+  $('.scrollPlus').click(function() {
+    $('.mainSection').css({"margin-left": "-=1280px"});
+  });
+
+  $('.scrollMinus').click(function() {
+    $('.mainSection').css({"margin-left": "+=1280px"});
+  });
+});
