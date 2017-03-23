@@ -54,7 +54,7 @@ nav {
 
 .scrollPlus:active,
 .scrollMinus:active {
-  opacity: .2;
+  transform: scale(1.1);
 }
 
 
