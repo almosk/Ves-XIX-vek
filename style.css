@@ -105,7 +105,7 @@ h1, h2 {
 }
 
 h1 {
-  font-family: "T-Star Pro", "Helvetica";
+  font-family: "T-StarPro", "Helvetica";
   font-weight: regular;
   font-size: 21px;
   margin-top: 10px;
@@ -113,7 +113,7 @@ h1 {
 }
 
 h2 {
-  font-family: "T-Star Pro", "Helvetica";
+  font-family: "T-StarPro-Bold", "Helvetica";
   font-weight: bold;
   font-size: 34px;
   margin-top: 30px;
