@@ -22,7 +22,7 @@
 
 * {
   box-sizing: border-box;
-  /*transition: .5s ease;*/
+  /*transition: .2s ease;*/
 }
 
 .body {
@@ -98,7 +98,19 @@ nav {
   height: 900px;
   background-color: white;
   transform: scale(.7);
-  box-shadow: 1px 1px 3px 2px #C7C7C7;
+  /*box-shadow: 1px 1px 3px 2px #C7C7C7;*/
+}
+
+.pagenumber {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  text-align: center;
+  font-family: "T-StarPro", "Helvetica";
+  font-size: 25px;
+  z-index: 9999999;
 }
 
 .picture1,
@@ -154,17 +166,21 @@ h1, h2 {
 h1 {
   font-family: "T-StarPro", "Helvetica";
   font-weight: regular;
-  font-size: 21px;
+  font-size: 27px;
   margin-top: 10px;
-  line-height: 24px;
+  line-height: 31px;
 }
 
 h2 {
   font-family: "T-StarPro-Bold", "Helvetica";
   font-weight: bold;
   font-size: 34px;
-  margin-top: 30px;
+  margin-top: 37px;
   line-height: 35px;
+  display: none;
+}
+
+.gifpause {
   display: none;
 }
 

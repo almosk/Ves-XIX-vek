@@ -23,3 +23,9 @@ $(function() {
     }
   });
 });
+// 
+// $(function() {
+//   $('.nav').click(function() {
+//     $('.picture2').addClass('gifpause');
+//   })
+// })
