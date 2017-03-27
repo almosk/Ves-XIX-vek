@@ -2,10 +2,10 @@ $(function() {
   var counter = 0;
 
   $('.scrollPlus').click(function() {
-    if (counter < 6) {
+    if (counter < 7) {
       $('.mainSection').css({"margin-left": "-=100vw"});
       $('.scrollMinus').removeClass('hidden');
-      if (counter == 5) {
+      if (counter == 6) {
         $('.scrollPlus').addClass('hidden');
       }
       counter += 1;
@@ -23,7 +23,7 @@ $(function() {
     }
   });
 });
-// 
+//
 // $(function() {
 //   $('.nav').click(function() {
 //     $('.picture2').addClass('gifpause');
