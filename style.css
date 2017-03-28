@@ -118,6 +118,7 @@ nav {
   font-family: "T-StarPro", "Helvetica";
   font-size: 25px;
   z-index: 9999;
+  display: none;
 }
 
 .picture1,
