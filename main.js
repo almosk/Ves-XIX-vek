@@ -39,6 +39,25 @@ $(function() {
         $('.scrollMinus').addClass('hidden');
       }
       counter -= 1;
+
+      if (counter == 0) {
+        document.images["img1"].src = "animation8.gif";
+      }
+      if (counter == 1) {
+        document.images["img1"].src = "animation.gif";
+      }
+      if (counter == 2) {
+        document.images["img2"].src = "animation3.gif";
+      }
+      if (counter == 3) {
+        document.images["img3"].src = "animation4.gif";
+      }
+      if (counter == 4) {
+        document.images["img4"].src = "animation5.gif";
+      }
+      if (counter == 5) {
+        document.images["img5"].src = "animation6.gif";
+      }
     }
   });
 
